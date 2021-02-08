@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Blog</title>
+</head>
+
+<body>
+    <div id="contenedor">
+        <!-- 
+    ##############################
+    #         CABECERA           #
+    ##############################
+        Un grupo de navegación o contenido introductorio. 
+        Un elemento header normalmente contiene una sección de encabezado 
+        (un elemento h1-h6 o un elemento hgroup), 
+        pero puede contener otro tipo de elementos, 
+        como una tabla de contenidos, 
+        un formulario de búsqueda 
+        o cualquier logo importante.
+        En HTML5 usariamos la etiqueta HEADER
+    -->
+        <div id="cabecera">
+            <img src="images/blogg.jpg" alt="Muestra una imagen de una aceitera">
+            <h1><span class='spanmorado'>Blog</span></h1>
+        </div>
+        <!-- 
+    ##############################
+    #         NAVEGACIÓN         #
+    ##############################
+El elemento <nav> representa una sección de una página 
+que enlaza con otras páginas o partes de la misma página: 
+una sección con enlaces de navegación.
+-->
+        <div id="nav">
+            <ul id="menu">
+                <li><a class="active" href="#informacion">Información</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#asignaturas">Asignaturas</a></li>
+                <li><a href="#precio">Precio</a></li>
+                <li><a href="#video">Vídeos</a></li>
+            </ul>
+        </div>
+
+        <div id="contenido">
+            <div id="informacion" class="apartado">
+                <h1>Información Clases</h1>
+                <img src="images/portada.html" alt="Imagen donde se muestra unos libros">
+                <p>
+                    <mark></mark> Bienvenidas y bienvenidos a esta página. Este blog ha sido creado para informar a los estudiantes de nuestras academias los horarios, las asignaturas y el precio acordado por los estudiantes y los profesores.
+                <p>
+                    <mark></mark> Se deberá acudir a todas las clases tanto online como presenciales.
+                </p>
+                <p>
+                    <mark></mark> Es importante establecer diferentes rangos horarios para la recepción de los alumnos para poder desinfectar la zona de las clases entre alumnos de una hora y los siguientes.
+                    </p<p>
+                    Será obligado acudir a todas las clases, tanto online como presenciales.
+                </p>
+
+            </div>
+
+            <div id="Horarios" class="apartado">
+                <h1>Horarios</h1>
+                <img src="images/bocadillo.jpg" alt="Imagen donde se muestra un bocadillo">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Horarios</th>
+                        <th>Asignaturas</th>
+                        <th>precio</th>
+                    </tr>
+                    <tr>
+                        <td>De 9:00 a 10:00</td>
+                        <td>De 10:00</td>
+                        <td>De 11:00</td>
+                        <td>De 12:00 a 13:00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Baguete de Baicon</td>
+                        <td>Baicon</td>
+                        <td>1.25</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="desayuno" class="apartado">
+                <h1>Desayuno</h1>
+                <img src="images/desayuno.jpg" alt="Imagen donde se muestra un bocadillo">
+
+                <ul>
+                    <li>Café y tostada jamón
+                        <ul>
+                            <li>Entera: 3.20</li>
+                            <li>Media: 2.80</li>
+                        </ul>
+                    </li>
+                    <li>Café y tostada mechado
+                        <ul>
+                            <li>Entera: 3.00</li>
+                            <li>Media: 2.50</li>
+                        </ul>
+                    </li>
+                    <li>Café y tostada mantequilla
+                        <ul>
+                            <li>Entera: 2.00</li>
+                            <li>Media: 1.80</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="reserva" class="apartado">
+                <h1>Reserva tu pedidos</h1>
+                <img src="images/reserva.jpg" alt="Imagen donde se muestra un bocadillo">
+
+
+                <form action="#" target="" method="get" name="formDatosPersonales">
+
+
+                    <label for="alumno">IdAlumno</label>
+                    <input type="number" type="number" min="999" max="9999" name="alumno" id="alumno" placeholder="identificador del alumno" />
+                    <br>
+                    <label for="bocadillo-select">Elige bocadillo:</label>
+
+                    <select name="bocadillo" id="bocadillo-select">
+                    <option value="">--Elige bocadillo--</option>
+                    <option value="chorizo">Chorizo</option>
+                    <option value="beacon">Beacon</option>
+                    <option value="choped">Choped</option>
+                    </select>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" for="mensaje" placeholder="Deja una nota sobre el pedido" maxlength="300"></textarea>
+
+                    <input type="submit" name="enviar" value="enviar datos" />
+                </form>
+            </div>
+
+            <div id="video" class="apartado">
+                <h1>¡Buenos días!</h1>
+                <p>Ejemplo (ver codigo fuente) para añadir vídeo</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_yTnKey3uzc?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Web del Centro</p>
+                <iframe width="560" height="315" src="http://iesalhadra.org" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+            <br>
+        </div>
+        <!-- 
+         ##############################
+         #      PIE DE PÁGINA         #
+         ##############################
+
+    En HTML5 usamos la etiqueta <footer>    
+    Representa el pie de una sección. Un pie tradicionalmente contiene 
+    información acerca de su sección, como quién escribió el contenido, 
+    enlaces relacionados, copyright y similares.
+  -->
+        <div id="pie">
+            <a href="http://iesalhadra.org/wpAlhadra/"><img src="images/logo.png" alt="Muestra el logo IES Alhadra"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
